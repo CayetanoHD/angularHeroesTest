@@ -1,0 +1,43 @@
+<h2>Super Heroes de <small>Malvel y Dc</small></h2>
+<hr class="border border-primary">
+
+
+
+<div class="row">
+      <div class="col-3 animated fadeIn fast" *ngFor="let heroe of heroes; let i = index ">
+        <div class="col-3 mt-1">
+          <div class="card p-3  "  style="width: 18rem;">
+            <img [src]="heroe.img" class="card-img-top"    alt="imagen">
+            <div class="card-block">
+              <h5 class="card-title">{{ heroe.nombre }}</h5>
+              <p class="card-text">{{ heroe.bio }}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted text-center">{{ heroe.aparicion }}</small>
+            </div>
+            <!-- <a [routerLink]="['/detallis',i+1]" type="button" name="" id="" class="btn btn-outline-warning">Detalles</a> -->
+            <button (click)="verHeroes(i)" type="button" name="" id="" class="btn btn-outline-warning">Detalles</button>
+          </div>
+          
+        </div>
+    
+        </div>
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+  
+
+  
+
+  
+</div>
+  
+ 
