@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HeroesService } from 'src/app/Service/heroes.service';
 
@@ -7,6 +7,7 @@ import { HeroesService } from 'src/app/Service/heroes.service';
   templateUrl: './filtrer.component.html',
 })
 export class FiltrerComponent implements OnInit {
+  @Input() heroe:any={}
   heroes: any[] = [];
   name: any;
 

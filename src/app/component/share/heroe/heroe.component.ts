@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HeroesService, Heroe } from 'src/app/Service/heroes.service';
-import {Route} from '@angular/router'
+
 @Component({
   selector: 'app-heroe',
   templateUrl: './heroe.component.html',

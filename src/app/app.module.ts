@@ -14,6 +14,7 @@ import { HeroeComponent } from './component/share/heroe/heroe.component';
 import { AboutComponent } from './component/share/about/about.component';
 import { DetalleComponent } from './component/share/detalle/detalle.component';
 import { FiltrerComponent } from './component/share/filtrer/filtrer.component';
+import { HeroeTargetComponent } from './component/share/heroe-target/heroe-target.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,8 @@ import { FiltrerComponent } from './component/share/filtrer/filtrer.component';
     AboutComponent,
     DetalleComponent,
     FiltrerComponent,
+    HeroeTargetComponent,
+     
     
   ],
   imports: [
