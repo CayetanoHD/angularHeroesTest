@@ -2,5 +2,5 @@
 <hr class="border border-primary">
 
 <div class="col">
-<app-heroe-target [heroe]="hero" [index]="i+1"  *ngFor="let hero of heroes; let i = index"></app-heroe-target>
+<app-heroe-target (heroeSelected)="verHeroes(i)" [heroe]="hero" [index]="i+1"  *ngFor="let hero of heroes; let i = index"></app-heroe-target>
 </div>

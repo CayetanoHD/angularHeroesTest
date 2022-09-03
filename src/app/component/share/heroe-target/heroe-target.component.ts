@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input , Output , EventEmitter} from '@angular/core';
 import { Router } from '@angular/router';
 import {HeroesService  } from "src/app/Service/heroes.service";
 
@@ -14,15 +14,21 @@ export class HeroeTargetComponent implements OnInit {
 @Input() index:number =0;
 
 
+  @Output()
+  heroeSelected: EventEmitter<number>;
 
-  constructor(private route: Router, _service:HeroesService) { }
+
+
+  constructor(private route:Router) {
+
+    this.heroeSelected = new EventEmitter();
+   }
 
   ngOnInit(): void {
   }
-  verHeroes(){
+  verHeroe(){
 
-console.log(this.index);
-this.route.navigate(['/detallis',this.index]);
+this.heroeSelected.emit(this.index);
 
   }
 
