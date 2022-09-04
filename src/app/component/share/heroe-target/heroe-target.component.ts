@@ -14,8 +14,7 @@ export class HeroeTargetComponent implements OnInit {
 @Input() index:number =0;
 
 
-  @Output()
-  heroeSelected: EventEmitter<number>;
+  @Output() heroeSelected: EventEmitter<number>;
 
 
 
@@ -28,7 +27,7 @@ export class HeroeTargetComponent implements OnInit {
   }
   verHeroe(){
 
-this.heroeSelected.emit(this.index);
+  this.route.navigate(['/detallis', this.index])
 
   }
 
